@@ -1,0 +1,23 @@
+* {
+    background-color: rgb(0, 255, 85);
+    color: #151515;
+}
+h2 {
+    color: goldenrod;
+}
+/* styling classes */
+.about {
+    border: 2px solid;
+}
+/* styling IDs */
+#hobbies:hover {
+    background-color: teal
+    color: blue
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
+ul li:nth-child(3) {
+    color: blue;
+}
