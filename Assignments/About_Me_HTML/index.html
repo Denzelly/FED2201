@@ -52,27 +52,26 @@
         </nav>
     </header>
 
-    <audio src="./resources/too_close"></audio>
-
+    
     <section id='about'>
         <div>
-        <p class='indented'>
-            My name is Denzel! I am a physicist, data analyst, musician, and much more. I'm currently
-            a graduate student at Georgia State University where I've been investigating a 2-Channel Pot Detector, and
-            subsequently the muon & neutron events we detect from it. I love research and have been conducting projects
-            since my freshman year of undergrad. This is where my coding career began. Before moving on to other
-            endeavors, I was working to create an application structured around FitBit's OAuth 2.0 framework that would
-            allow my colleagues and I access to the real-time physiological data provided by the FitBit users who'd
-            grant us permission. I enjoy learning new things and hope that one day I'll have the pleasure of helping
-            others in their pursuit of similar goals.
-        </p>
-    </div>
+            <p class='indented'>
+                My name is Denzel! I am a physicist, data analyst, musician, and much more. I'm currently
+                a graduate student at Georgia State University where I've been investigating a 2-Channel Pot Detector, and
+                subsequently the muon & neutron events we detect from it. I love research and have been conducting projects
+                since my freshman year of undergrad. This is where my coding career began. Before moving on to other
+                endeavors, I was working to create an application structured around FitBit's OAuth 2.0 framework that would
+                allow my colleagues and I access to the real-time physiological data provided by the FitBit users who'd
+                grant us permission. I enjoy learning new things and hope that one day I'll have the pleasure of helping
+                others in their pursuit of similar goals.
+            </p>
+        </div>
         <figure>
             <img src="./resources/Denzel.jpeg" height='300' width='240' class='centerpic'>
             <figcaption class='centertext'>This is me</figcaption>
         </figure>
     </section>
-
+    
     <section id='lorem'>
         <p text-align='justify' class='indented; centertext' style="font-size: smaller;">
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cupiditate odio amet possimus aperiam!
@@ -81,7 +80,7 @@
             doloribus.'
         </p>
     </section>
-
+    
     <section id='hobbies'>
         <br><br>
         <p>My hobbies include (but definitely are not limited to):</p>
@@ -92,13 +91,12 @@
             <li>Flying my Zelly Drone</li>
         </ol>
     </section>
-
     <section id='career'>
         <header>
             <h3>Denzelly's Career</h3>
         </header>
         <p>Here are some of my work experiences for those who are interested!</p>
-
+        
         <ul class='career'>
             <li>
                 <h5>Engineering Intern</h5>
@@ -138,21 +136,31 @@
             </li>
         </ul>
     </section>
+    
+    <audio controls muted autoplay id='song' src="./resources/too_close"></audio>
 
     <section id='contact'>
         <h3>Contact Info:</h3>
         <p><b>
-                Loc: Atlanta, GA
-                <br>Main: +1 (864) 590-5623
+            Loc: Atlanta, GA
+            <br>Main: +1 (864) 590-5623
                 <br>Fax: +1 (864) 590-5625
                 <br>Email: Denx1995@yahoo.com
             </b></p>
     </section>
 
-    <section>
+    <section class='centertext'>
         <form>
-
+            <label>Decompression Time:</label>
+            <br>
+            <input type="text" placeholder="Type in a secret & watch it disappear. You'll feel better!" size='46'>
         </form>
+        <button onclick="welcome()">Try it!</button>
+        <script>
+            function welcome() {
+            alert("See! You're welcome.")
+        }
+        </script>
     </section>
 
 </body>
