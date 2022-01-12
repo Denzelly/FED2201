@@ -33,3 +33,22 @@ li:nth-child(3) {
     border-width: 2px;
     padding: 10pt;
 }
+#italy {
+font-style: italic;
+}
+
+#bolden {
+font-weight: bold;
+}
+
+#largey {
+font-size: larger;
+}
+
+#smalley {
+font-size: smaller;
+}
+
+#olivia {
+border-color: olive;
+}
