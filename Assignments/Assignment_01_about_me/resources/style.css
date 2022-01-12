@@ -59,3 +59,7 @@ nav > a {
 div p {
     background-color: blanchedalmond;
 }
+
+div, p {
+    text-align: right;
+}
