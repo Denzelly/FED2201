@@ -28,3 +28,8 @@ a:hover {
 li:nth-child(3) {
     color: navy
 }
+* {
+    border-style: solid;
+    border-width: 2px;
+    padding: 10pt;
+}
