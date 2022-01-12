@@ -52,3 +52,10 @@ font-size: smaller;
 #olivia {
 border-color: olive;
 }
+
+nav > a {
+    background-color: black;
+}
+div p {
+    background-color: blanchedalmond;
+}
