@@ -25,3 +25,6 @@ ul li:nth-child(3) {
 a:hover {
     background-color: yellow;
 }
+li:nth-child(3) {
+    color: navy
+}
