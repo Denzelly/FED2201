@@ -25,45 +25,61 @@ ul li:nth-child(3) {
 a:hover {
     background-color: yellow;
 }
+
 li:nth-child(3) {
     color: navy
 }
+
 * {
     border-style: solid;
     border-width: 2px;
     padding: 10pt;
 }
+
 #italy {
-font-style: italic;
+    font-style: italic;
 }
 
 #bolden {
-font-weight: bold;
+    font-weight: bold;
 }
 
 #largey {
-font-size: larger;
+    font-size: larger;
 }
 
 #smalley {
-font-size: smaller;
+    font-size: smaller;
 }
 
 #olivia {
-border-color: olive;
+    border-color: olive;
 }
 
-nav > a {
+nav>a {
     background-color: black;
 }
+
 div p {
     background-color: blanchedalmond;
 }
 
-div, p {
+div,
+p {
     text-align: right;
 }
+
 footer.sticky {
     position: sticky;
-    bottom:0
+    bottom: 0
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
 }
