@@ -1,3 +1,4 @@
+/* 
 * {
     background-color: rgb(0, 255, 85);
     color: #151515;
@@ -5,11 +6,11 @@
 h2 {
     color: goldenrod;
 }
-/* styling classes */
+// styling classes
 .about {
     border: 2px solid;
 }
-/* styling IDs */
+// styling IDs
 #hobbies:hover {
     background-color: teal
     color: blue
@@ -20,4 +21,7 @@ nav {
 }
 ul li:nth-child(3) {
     color: blue;
+} */
+a:hover {
+    background-color: yellow;
 }
