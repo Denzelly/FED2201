@@ -63,3 +63,7 @@ div p {
 div, p {
     text-align: right;
 }
+footer.sticky {
+    position: sticky;
+    bottom:0
+}
