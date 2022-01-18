@@ -1,0 +1,128 @@
+.recap {
+    color: red
+}
+
+.example {
+    border: 3px solid lightslategray;
+    /* color: blue; */
+    margin: 2.5%;
+    padding: 2.5%;
+}
+
+
+/* Using Flexbox and Media Queries */
+.asideDiv,
+.flexboxDiv {
+    border: 1px solid black;
+    margin: 2.5%;
+    height: 5vw;
+    width: 10vw;
+}
+
+aside {
+    color: black;
+}
+
+aside>p {
+    color: white;
+}
+
+aside p {
+    background-color: turquoise;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexboxContainer {
+    display: flex;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flexboxDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (orientation:landscape) {
+    .flexboxContainer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+@media (orientation: portrait) {
+    .flexboxContainer {
+        flex-direction: column;
+    }
+
+}
+
+/* Transitions and Animations */
+
+.recap, .flexbox {
+    display: none
+}
+
+.transitions-n-animations h3 {
+    font-size: 30px;
+}
+
+#transition-box {
+    width: 25vw;
+    height: 25vw;
+    background-color: green;
+    transition: width 2s, height 4s;
+}
+
+#transition-box:hover {
+    width: 50vw;
+    height: 50vw;
+}
+
+#animation-box {
+    width: 25vw;
+    height: 25vw;
+    background-color: blue;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes example {
+    /* from {background-color: blue;}
+    to {background-color: red;} */
+    0% {background-color: blue;}
+    10% {background-color: red;}
+    100% {background-color: blue;}
+}
+
+/* GRID */
+.recap, .flexbox, .transitions-n-animations {
+    display:none;}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-item {
+     width: 25vw;
+     height: 25vw;
+     background-color: lightblue;
+     border: 1px solid black;
+     margin: 1vw;
+     padding: 1vw;
+}

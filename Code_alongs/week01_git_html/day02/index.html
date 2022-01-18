@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 1 Day 2: HTML Practice</h1>
+
+        <nav>
+            <a href="something.html">Something</a>
+            <a href="#semanticsElements">Semantic Elements</a>
+            <a href="#buttons">Buttons</a>
+            <a href="#forms">Forms</a>
+        </nav>
+    </header>
+
+    <article id='semanticsElements'>
+
+        <h3> Semantic Elements</h3>
+        <p>
+            Semantics deal with....................much easier.
+        </p>
+        <p>
+            Semantics deal with....................much easier.
+        </p>
+
+    </article>
+
+    <section id='buttons'>
+        <h3>Buttons</h3>
+
+        <button onclick='start()'>Start</button>
+        <button onclick='finish()'>Finish</button>
+
+    </section>
+
+    <section id='forms'>
+
+        <h3>Forms</h3>
+
+        <form>
+            <label>Something: </label>
+            <input type='text' name='something' id='something' placeholder="Something can be typed here!"
+                size="25"></input>
+
+            <label>Email: </label>
+            <input type='email' id='email' name='email' size="15" placeholder="Enter your Email"></input>
+
+            <input type='submit' value='submit'>
+        </form>
+    </section>
+
+
+    <script>
+        function start() {
+            alert('Start button clicked!')
+        }
+
+        function finish() {
+            console.log('Finish button clicked!')
+            alert('Finish button clicked!')
+        }
+    </script>
+</body>
+
+</html>
