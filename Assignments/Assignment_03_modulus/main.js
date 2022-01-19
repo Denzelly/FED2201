@@ -7,7 +7,7 @@ var n = n1 - n2;
 
 (function () {
         for (let i = 0;; i++) {
-            if (n > 0) {
+            if (n > n2) {
                 n = n1
                 n1 -= n2
             } else {
