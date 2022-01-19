@@ -76,4 +76,4 @@
 
     console.log("IIFE is now running!")
 
-});
+})();
