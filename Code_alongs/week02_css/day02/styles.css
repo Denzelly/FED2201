@@ -126,3 +126,31 @@ aside p {
      margin: 1vw;
      padding: 1vw;
 }
+
+.fpractice {
+    display: flex
+}
+
+.morefpractice {
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+
+}
+
+.gridpractice {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.moregridpractice {
+   width: 10vw;
+   height: 10vw;
+   background-color: red;
+   border: black 10px solid;
+}
+
+.assessment {
+    border: black 1px solid;
+    margin: 5%;
+}
