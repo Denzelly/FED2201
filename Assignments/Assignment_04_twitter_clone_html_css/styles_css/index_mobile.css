@@ -1,0 +1,86 @@
+* {
+    background-color: gray;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    position: sticky;
+    width: 428px;
+    height: 128px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 75px;
+    display: block;
+    align-items: center;
+    text-align: center;
+
+    color: #6BB591;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+
+}
+
+/* twitterlogo */
+.twitbird {
+    position: static;
+    width: 220px;
+    height: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border: 10px solid #6BB591;
+    box-sizing: border-box;
+    border-radius: 124px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.button {
+    position: relative;
+    width: 85px;
+    height: 33px;
+    left: auto;
+    top: auto;
+
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 19px;
+
+    font-family: Proza Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+    background-color: #fff;
+}
+
+    /* TwittyTwit */
+    .twitty {
+    
+        position: relative;
+        width: 204px;
+        height: 56px;
+    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 56px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #6BB591;
+    
+        border: 5px solid #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    }
