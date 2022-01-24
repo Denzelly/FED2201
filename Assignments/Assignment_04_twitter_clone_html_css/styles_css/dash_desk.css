@@ -26,12 +26,6 @@
 
 }
 
-.text {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 .search {
     background-color: black;
     color: #6BB591;
@@ -77,6 +71,7 @@
 }
 
 .postbord {
+    font-size: 8pt;
     border-radius: 6pt;
     border: 2pt solid black;
     background-color: #6BB591;
@@ -87,6 +82,7 @@
 /* Having to specify for the p tags for some reason... */
 .p {
     background-color: #6BB591;
+    
 }
 
 .head {
@@ -128,4 +124,5 @@
 
 .gridit {
     display: grid;
+    align-items: left;
 }
