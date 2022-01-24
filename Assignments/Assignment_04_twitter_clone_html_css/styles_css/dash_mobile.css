@@ -32,22 +32,27 @@
 }
 
 
-.input {
+.search {
     background-color: black;
     color: #6BB591;
     display: block;
     justify-items: center;
 }
+
 .post {
-    background-color: gray;
-    border: 1pt solid black;
-    color: black;
+    background-color: slategrey;
+    color: #6BB591;
+    font-weight: bold;
+    border: 3pt solid black;
+    font-size: larger;
     display: block;
+    text-align: left;
     justify-items: center;
-    ;
+    height: 200px;
+    width: 300px;
 }
 
-.button {
+.postit {
     position: relative;
     width: 85px;
     height: 33px;
@@ -68,10 +73,25 @@
     text-align: center;
 
     color: #000000;
-    background-color: #fff;
+    background-color: #6BB591;
+}
+
+.postbord {
+    border-radius: 6pt;
+    border: 2pt solid black;
+    background-color: #6BB591;
+    width: 300px;
+    height: 160px;
+}
+
+/* Having to specify for the p tags for some reason... */
+.p {
+    background-color: #6BB591;
 }
 
 .head {
+    border-radius: 30pt;
+    background-color: #6BB591;
     position: static;
     width: 45px;
     height: 45px;
@@ -85,26 +105,27 @@
     top: 174px;
 }
 
-.flexboxcont {
-    flex-direction: row-reverse;
+.like {
+    background-color: #6BB591;
+    position: sticky;
+    width: 20px;
+    height: 20px;
 }
 
-.flexboxdiv {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.nolike {
+    background-color: #6BB591;
+    position: sticky;
+    width: 20px;
+    height: 20px;
+    padding-right: 250px;
+    transform: rotate(180deg);
 }
 
-.gridcont {
+/* .grid {
     display: grid;
-    /* grid-template-columns: auto; */
     grid-template-columns: auto auto auto;
-    border-style: solid;
 }
 
 .gridit {
     display: grid;
-    width: 20vw;
-    height: 20vw;
-    background-color: #6BB591;
-}
+} */
