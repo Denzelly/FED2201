@@ -61,27 +61,27 @@ submitCarButton.addEventListener('click', (event) => {
     listOfCars.push(new Car(carMakeInput.value, carModelInput.value, carYearInput.value))
 
 
-    // clear the input fields
-    carMakeInput.value = ""
-    carModelInput.value = ""
-    carYearInput.value = ""
-
-    // add the submitted car to the OL in the HTML
+    
     // pull the innerHTML 
     let existingListOfCars = carsSubmittedElement.innerHTML
-
+    
     // now add in new data
     carsSubmittedElement.innerHTML = `
     ${existingListOfCarsHTML}
     <li> 
-    <ul>
-    <li> <strong>Year: </strong> ${carYearInput} </li>
-    <li> <strong>Make: </strong> ${carMakeInput} </li>
-    <li> <strong>Model: </strong> ${carModelInput}</li>
-    </ul> 
+        <ul>
+            <li> <strong>Year: </strong> ${carYearInput} </li>
+            <li> <strong>Make: </strong> ${carMakeInput} </li>
+            <li> <strong>Model: </strong> ${carModelInput}</li>
+        </ul> 
     </li>
     `
-
+    // add the submitted car to the OL in the HTML
+    
+    // clear the input fields
+    carMakeInput.value = ""
+    carModelInput.value = ""
+    carYearInput.value = ""
 
     // alert('Submit was clicked!')
 })

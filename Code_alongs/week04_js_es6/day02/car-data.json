@@ -1,0 +1,20 @@
+{
+    "cars": [
+        {
+            "make": "Nissan",
+            "model": "Altima",
+            "year": 2016,
+            "isDriveable": true
+        },
+        {
+            "make": "Ford",
+            "model": "Fusion",
+            "year": 2019
+        },
+        {
+            "make": "Dodge",
+            "model": "Ram",
+            "year": 2022
+        }
+    ]
+}
