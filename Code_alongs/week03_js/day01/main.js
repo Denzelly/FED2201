@@ -1,4 +1,4 @@
-// // JavaScript Fundamentals
+// JavaScript Fundamentals
 
 // // VAriable Declaration, Data Types
 // var name = "Zelly";
@@ -37,14 +37,14 @@
 //     // For Loop
 //     for(let index = 0; index < arr.length; index++) {
 //         // Pseudocode: I want the phrase to be "The array at the index of ## is of type [data type of the index's value] with value of [whatever that index's value is]]"
-//         console.log("The array at the index of " + index + " is of type: " + typeof arr[index] + " with a vale of: " arr[index]);
+//         console.log("The array at the index of " + index + " is of type: " + typeof arr[index] + " with a value of: ", arr[index]);
 //     }
 
 //     return arr
 // }
 
-// // IIFEs: Immediately Invoked Function Expressions
-(function (){
+// IIFEs: Immediately Invoked Function Expressions
+// (function (){
 
     var name = "Zelly";
     var nullValue = null;
@@ -61,9 +61,10 @@
     };
 
     function myFunc() {
+        "use strict"
         // console.log(aBoolean);
         var x = 0;
-        return
+        return x;
     };
 
     function myParamFunc(arr) {
@@ -76,4 +77,4 @@
 
     console.log("IIFE is now running!")
 
-})();
+// })();
