@@ -62,9 +62,22 @@ submitInfo.addEventListener('click', (event) => {
     cityInput.value = "";
     stateInput.value = "";
     zipInput.value = "";
-
+    
     alert('Submit was clicked!')
 })
+
+// Edit Info
+function edit() {
+    fnameInput.value = prompt('Edited First Name?');
+    mnameInput.value = prompt('Edited Middle Name?');
+    lnameInput.value = prompt('Edited Last Name?');
+    emailInput.value = prompt('Edited Email Address?');
+    addressInput.value = prompt('Edited Mailing Address?');
+    dobInput.value = prompt('Edited Date of birth?');
+    cityInput.value = prompt('Edited City?');
+    stateInput.value = prompt('Edited State?');
+    zipInput.value = prompt('Edited Zip?');
+}
 
 // Delete Info
 function cleanReset() {

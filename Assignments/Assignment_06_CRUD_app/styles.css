@@ -31,6 +31,10 @@
       margin-left: 30pt;
   }
 
-  #delete-info {
-      /* margin-top: -200pt; */
+  /* #delete-info {
+      margin-top: -200pt;
+  } */
+
+.h1 {
+      background-color: rgb(255, 207, 152);
   }
