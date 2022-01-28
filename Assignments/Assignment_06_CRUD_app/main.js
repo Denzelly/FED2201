@@ -37,10 +37,17 @@ submitInfo.addEventListener('click', (event) => {
     informationSubmittedElement.innerHTML = `
     ${existingIntervieweesHTML}
     <li> 
-    <ul>
-    <li> <strong>First Name </strong> ${fnameInput.value} </li>
-    <li> <strong>Last Name: </strong> ${lnameInput.value} </li>
-    </ul> 
+        <ul>
+            <li> <strong>First Name </strong> </strong> ${fnameInput.value} </li>
+            <li> <strong>Last Name: </strong> </strong> ${lnameInput.value} </li>
+                <li class='indent'> <strong> Middle Name: </strong> ${mnameInput.value} </li>
+                <li class='indent'> <strong> Email Address: </strong> ${emailInput.value} </li>
+                <li class='indent'> <strong> Mailing Address: </strong> ${addressInput.value} </li>
+                <li class='indent'> <strong> Date of Birth: </strong> ${dobInput.value} </li>
+                <li class='indent'> <strong> City: </strong> ${cityInput.value} </li>
+                <li class='indent'> <strong> State: </strong> ${stateInput.value} </li>
+                <li class='indent'> <strong> Zip Code: </strong> ${zipInput.value} </li>
+            </ul> 
     </li>
     `
     // add the submitted car to the OL in the HTML
@@ -62,7 +69,7 @@ submitInfo.addEventListener('click', (event) => {
 // Delete Info
 function cleanReset() {
     informationSubmittedElement.innerHTML = "";
-    alert("Listed Interviewees Cleared!")
+    alert("Listed Interviewees & Info Cleared!")
 }
 
 // Constructor Function

@@ -1,4 +1,5 @@
 #interview {
+    background-color:burlywood;
     margin: 0%;
     border: black solid 1px;
     width: 60vw;
@@ -18,10 +19,18 @@
 }
 
 .submit {
-    padding-bottom: 300pt;
+    padding-bottom: 100pt;
 }
 
 .animation:focus {
     transform: rotate(45deg), rotate(-45);
     transition-duration: 2s;
+  }
+  
+  .indent {
+      margin-left: 30pt;
+  }
+
+  #delete-info {
+      /* margin-top: -200pt; */
   }
