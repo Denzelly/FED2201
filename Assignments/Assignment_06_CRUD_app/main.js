@@ -1,6 +1,7 @@
 //DOM Manipulation
 var interviewees = []
 var submitInfo = document.getElementById('submit-info')
+var deleteInfo = document.getElementById('delete-info')
 
 var fnameInput = document.getElementById('fname')
 var mnameInput = document.getElementById('mname')
@@ -57,6 +58,12 @@ submitInfo.addEventListener('click', (event) => {
 
     alert('Submit was clicked!')
 })
+
+// Delete Info
+function cleanReset() {
+    informationSubmittedElement.innerHTML = "";
+    alert("Listed Interviewees Cleared!")
+}
 
 // Constructor Function
 function Interviewee(fname, mname, lname, email, address, dob, city, state, zip) {
