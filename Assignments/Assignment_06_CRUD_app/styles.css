@@ -1,0 +1,27 @@
+#interview {
+    margin: 0%;
+    border: black solid 1px;
+    width: 60vw;
+}
+
+#interview>form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 10%;
+}
+
+.interview-div {
+    margin: 5%;
+    border: solid black 3pt;
+    width: auto;
+}
+
+.submit {
+    padding-bottom: 300pt;
+}
+
+.animation:focus {
+    transform: rotate(45deg), rotate(-45);
+    transition-duration: 2s;
+  }
