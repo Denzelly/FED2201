@@ -38,8 +38,8 @@ submitInfo.addEventListener('click', (event) => {
     ${existingIntervieweesHTML}
     <li> 
         <ul>
-            <li> <strong>First Name </strong> </strong> ${fnameInput.value} </li>
-            <li> <strong>Last Name: </strong> </strong> ${lnameInput.value} </li>
+            <li id='newFname'> <strong>First Name </strong> ${fnameInput.value} </li>
+            <li> <strong>Last Name: </strong> ${lnameInput.value} </li>
                 <li class='indent'> <strong> Middle Name: </strong> ${mnameInput.value} </li>
                 <li class='indent'> <strong> Email Address: </strong> ${emailInput.value} </li>
                 <li class='indent'> <strong> Mailing Address: </strong> ${addressInput.value} </li>
@@ -68,15 +68,18 @@ submitInfo.addEventListener('click', (event) => {
 
 // Edit Info
 function edit() {
-    fnameInput.value = prompt('Edited First Name?');
-    mnameInput.value = prompt('Edited Middle Name?');
-    lnameInput.value = prompt('Edited Last Name?');
-    emailInput.value = prompt('Edited Email Address?');
-    addressInput.value = prompt('Edited Mailing Address?');
-    dobInput.value = prompt('Edited Date of birth?');
-    cityInput.value = prompt('Edited City?');
-    stateInput.value = prompt('Edited State?');
-    zipInput.value = prompt('Edited Zip?');
+    // Create var for list element
+    var fnameInputNew = document.getElementById(newFname)
+    fnameInputNew.innerHTML = prompt('Edited First Name?');
+
+    // mnameInput.value = prompt('Edited Middle Name?');
+    // lnameInput.value = prompt('Edited Last Name?');
+    // emailInput.value = prompt('Edited Email Address?');
+    // addressInput.value = prompt('Edited Mailing Address?');
+    // dobInput.value = prompt('Edited Date of birth?');
+    // cityInput.value = prompt('Edited City?');
+    // stateInput.value = prompt('Edited State?');
+    // zipInput.value = prompt('Edited Zip?');
 }
 
 // Delete Info
