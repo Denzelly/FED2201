@@ -1,11 +1,11 @@
-#Homepage * {
+* {
     background-color: gray;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Header */
-#Homepage .header {
+.header {
     position: relative;
     width: 417px;
     height: 87px;
