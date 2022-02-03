@@ -1,0 +1,56 @@
+{
+    "cars": [
+        {
+            "make": "Nissan",
+            "model": "Altima",
+            "year": 2016,
+            "ownerID": 0        
+        },
+        {
+            "make": "Ford",
+            "model": "Fusion",
+            "year": 2019,
+            "ownerID": 1        
+        },
+        {
+            "make": "Honda",
+            "model": "Accord",
+            "year": 2019,
+            "ownerID": 0
+        },
+        {
+            "make": "Honda",
+            "model": "Civic",
+            "year": 2020,
+            "ownerID": 1
+        },
+        {
+            "make": "Toyota",
+            "model": "Camry",
+            "year": 2012,
+            "ownerID": 0 
+        },
+        {
+            "make": "Ford",
+            "model": "F-150",
+            "year": 2019,
+            "ownerID": 1
+        },
+        {
+            "make": "Dodge",
+            "model": "Ram",
+            "year": 2022,
+            "ownerID": 0
+        }
+    ],
+    "people": [
+        {
+            "name": "Zelly",
+            "id": 0
+        },
+        {
+            "name": "John",
+            "id": 1
+        }
+    ]
+}
