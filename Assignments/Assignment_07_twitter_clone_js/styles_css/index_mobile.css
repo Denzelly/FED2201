@@ -1,10 +1,10 @@
-* {
+#HomePage * {
     background-color: gray;
     margin-right: auto;
     margin-left: auto;
 }
 
-.header {
+#HomePage .header {
     position: sticky;
     width: 428px;
     height: 128px;
@@ -24,7 +24,7 @@
 }
 
 /* twitterlogo */
-.twitbird {
+#HomePage .twitbird {
     position: static;
     width: 220px;
     height: 220px;
@@ -38,7 +38,7 @@
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.button {
+#HomePage .button {
     position: relative;
     width: 85px;
     height: 23px;
@@ -62,7 +62,7 @@
 }
 
     /* TwittyTwit */
-    .twitty {
+    #HomePage .twitty {
     
         position: relative;
         width: 204px;

@@ -6,20 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitty Twit</title>
-    <link rel='stylesheet' href='./styles_css/index_mobile.css'>
-    <link rel='stylesheet' href='./styles_css/index_desk.css'>
-    <link rel='stylesheet' href='./styles_css/sign_in_mobile.css'>
-    <link rel='stylesheet' href='./styles_css/sign_in_desk.css'>
-    <link rel='stylesheet' href='./styles_css/sign_up_mobile.css'>
-    <link rel='stylesheet' href='./styles_css/sign_up_desk.css'>
-    <link rel='stylesheet' href='./styles_css/dash_mobile.css'>
-    <link rel='stylesheet' href='./styles_css/dash_desk.css'>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
     <div id='HomePage'>
+        <link id=homeMobile rel='stylesheet' href='./styles_css/index_mobile.css'>
+        <!-- <link id=homeDesk rel='stylesheet' href='./styles_css/index_desk.css'> -->
+
         <section class='header'>
             <h1>Enter The Twitterverse</h1>
         </section>
@@ -27,7 +24,7 @@
         <br><br>
         <section class='grid'>
             <form class='grid1'>
-                <a class='button' href='sign_up.html' type="button">SIGN-UP</a>
+                <a id='homeSignUp' class='button' type="button">SIGN-UP</a>
             </form>
             <br><br>
 
@@ -37,7 +34,7 @@
             <br><br>
 
             <form class='grid3'>
-                <a class='button' href='sign_in.html' type="button">LOGIN</a>
+                <a id='homeSignIn' class='button' type="button">LOGIN</a>
             </form>
 
             <div class="grid4">
@@ -47,6 +44,9 @@
     </div>
 
     <div id='Sign-In'>
+        <link id=signInMobile rel='stylesheet' href='./styles_css/sign_in_mobile.css'>
+        <!-- <link id=signInDesk rel='stylesheet' href='./styles_css/sign_in_desk.css'> -->
+
         <section class='header'>
             <h1>Welcome</h1>
         </section>
@@ -66,7 +66,7 @@
         </section>
 
         <form>
-            <a class="button" href='dash.html' type="submit">LOGIN</a>
+            <a id='loginButton' class="button" type="submit">LOGIN</a>
         </form>
 
         <section class='text'>
@@ -94,11 +94,13 @@
             <p>New to TwittyTwit?</p>
         </section>
         <form>
-            <a class='button' href='sign_up.html' type="button">SIGN-UP</a>
+            <a id='signInSignUp' class='button' type="button">SIGN-UP</a>
         </form>
     </div>
 
     <div id='Sign-Up'>
+        <link id=signUpMobile rel='stylesheet' href='./styles_css/sign_up_mobile.css'>
+        <!-- <link id=signUpDesk rel='stylesheet' href='./styles_css/sign_up_desk.css'> -->
         <section class='header'>
             <h1>Welcome</h1>
         </section>
@@ -112,22 +114,22 @@
         <section class='grids'>
             <section class='item1'>
                 <br>
-                <input class='input' type="text" placeholder='Email or Phone'>
+                <input id="email_phone" class='input' type="text" placeholder='Email or Phone'>
                 <br>
-                <input class='input' type="text" placeholder='Name'>
+                <input id="name" class='input' type="text" placeholder='Name'>
                 <br>
-                <input class='input' type="text" placeholder='Username'>
+                <input id="username" class='input' type="text" placeholder='Username'>
                 <br>
-                <input class='input' type="text" placeholder='About Me'>
+                <input id="about_me" class='input' type="text" placeholder='About Me'>
                 <br>
-                <input class='input' type="text" placeholder='Password'>
+                <input id="password" class='input' type="text" placeholder='Password'>
                 <br>
-                <input class='input' type="text" placeholder='Confirm Password'>
+                <input id="cpassword" class='input' type="text" placeholder='Confirm Password'>
                 <br>
 
                 <form>
                     <br>
-                    <button class="button" type="submit">SIGN-UP</button>
+                    <button id='signUpButton' class="button" type="submit">SIGN-UP</button>
                     <br>
                 </form>
             </section>
@@ -140,7 +142,7 @@
                 <p>Already a user?</p>
 
                 <form>
-                    <a class='button' href='sign_in.html' type="button">LOGIN</a>
+                    <a id='signUpSignIn' class='button' type="button">LOGIN</a>
                 </form>
             </section>
         </section>
@@ -150,6 +152,8 @@
     </div>
 
     <div id='Dashboard'>
+        <link id=dashMobile rel='stylesheet' href='./styles_css/dash_mobile.css'>
+        <!-- <link id=dashDesk rel='stylesheet' href='./styles_css/dash_desk.css'> -->
         <section>
             <input class='search' type="text" placeholder="search">
         </section>
@@ -238,6 +242,9 @@ Bet you didn't see this coming...but this too is my post. Hear me roar the loude
         </section>
     </div>
 
+
+    <script type='module' src='main.js'></script>
+    <!-- <script src='jQuery-AJAX.js'></script> -->
 </body>
 
 </html>

@@ -15,9 +15,9 @@ $(document).ready(() => {
     // var carMakeInput = document.getElementById('car-make')
     // var carModelInput = document.getElementById('car-model')
     // var carYearInput = document.getElementById('car-year')
-    var carMakeInput = $('#car-make')
-    var carModelInput = $('#car-model')
-    var carYearInput = $('#car-year')
+    var carMakeInput = $(`#car-make`)
+    var carModelInput = $(`#car-model`)
+    var carYearInput = $(`#car-year`)
 
     // var carsSubmittedElement = document.getElementById('list-of-cars-submitted')
     var carsSubmittedElement = $('#list-of-cars-submitted')
