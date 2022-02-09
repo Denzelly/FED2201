@@ -67,6 +67,12 @@ export default (function pageLoad() {
     var dashMobile = document.getElementById('dashMobile');
     var dashDesk = document.getElementById('dashDesk');
 
+            // Login Placeholder
+            $(`#loginButton`).click((e) => {
+                // e.preventDefault()
+                dashDisplay()
+            })
+
     // HomePage Display
     if (home.style.display === 'block') {
         homeDisplay();
