@@ -1,0 +1,40 @@
+#interview {
+    background-color:burlywood;
+    margin: 0%;
+    border: black solid 1px;
+    width: 60vw;
+}
+
+#interview>form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 10%;
+}
+
+.interview-div {
+    margin: 5%;
+    border: solid black 3pt;
+    width: auto;
+}
+
+.submit {
+    padding-bottom: 100pt;
+}
+
+.animation:focus {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
+  
+  .indent {
+      margin-left: 30pt;
+  }
+
+  /* #delete-info {
+      margin-top: -200pt;
+  } */
+
+.h1 {
+      background-color: rgb(255, 207, 152);
+  }
