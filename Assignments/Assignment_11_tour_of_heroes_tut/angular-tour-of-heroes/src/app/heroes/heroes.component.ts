@@ -16,7 +16,7 @@ selectedHero?: Hero;
 
   ngOnInit(): void {
   }
-  onSelect(hero: Hero) {
+  onSelect(hero: Hero): void {
     this.selectedHero = hero;
     console.log(this.selectedHero)
   }
