@@ -1,0 +1,39 @@
+.page {
+    background-color: gray;
+}
+
+.howManyTil {
+    background-color: palevioletred;
+    border: 1pt solid black;
+    width: 200pt;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 10pt;
+}
+
+.cal {
+    background-color: palevioletred;
+    border: 1pt solid black;
+    width: 200pt;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 10pt;
+}
+
+.daysLeft {
+    width: 55pt;
+}
+
+.daysBt {
+    width: 38pt
+}
+
+.fromNow {
+    width: 55pt;
+}
+
+.check{
+    border-radius: 5px;
+}

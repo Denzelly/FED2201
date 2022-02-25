@@ -35,8 +35,39 @@
 .search {
     background-color: black;
     color: #6BB591;
-    display: block;
-    justify-items: center;
+    position: relative;
+    top: -20px;
+    right: -35px;
+    justify-content: center;
+}
+.home {
+    position: relative;
+    width: 45px;
+    height: 51px;
+    right: -300px;
+    top: -10px;
+}
+.logout {
+    position: relative;
+    width: 85px;
+    height: 23px;
+    right: -140px;
+    top: 0px;
+
+    color: #000000;
+    background-color: #fff;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: Proza Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .post {
@@ -89,6 +120,14 @@
     background-color: #6BB591;
 }
 
+.myHead {
+    border-radius: 30pt;
+    background-color: #6BB591;
+    position: relative;
+    width: 45px;
+    right: -35px;
+    height: 45px;
+}
 .head {
     border-radius: 30pt;
     background-color: #6BB591;
@@ -97,13 +136,6 @@
     height: 45px;
 }
 
-.home {
-    position: static;
-    width: 45px;
-    height: 51px;
-    left: 118px;
-    top: 174px;
-}
 
 .like {
     background-color: #6BB591;

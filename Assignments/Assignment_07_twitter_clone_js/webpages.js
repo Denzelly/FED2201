@@ -67,40 +67,26 @@ export default (function pageLoad() {
     var dashMobile = document.getElementById('dashMobile');
     var dashDesk = document.getElementById('dashDesk');
 
-            // Login Placeholder
-            $(`#loginButton`).click((e) => {
-                // e.preventDefault()
-                dashDisplay()
-            })
+    // Login Placeholder
+    $(`#loginButton`).click((e) => {
+        dashDisplay()
+    })
 
     // HomePage Display
     if (home.style.display === 'block') {
         homeDisplay();
-        // css display
-        // homeMobile.style.display = 'block';
-        // homeDesk.style.display = 'none'
     }
     // Sign-In Display
     else if (signIn.style.display === 'block') {
         signInDisplay();
-        // css display
-        // signInMobile.style.display = 'block';
-        // signUpDesk.style.display = 'none'
     }
     // Sign-Up Display
     else if (signUp.style.display === 'block') {
         signUpDisplay();
-        // css display
-        // signUpMobile.style.display = 'block';
-        // signUpDesk.style.display = 'none'
     }
     // Dashboard Display
     else {
         dashDisplay();
-        // css display
-        // dashMobile.style.display = 'block';
-        // dashDesk.style.display = 'none'
     }
-
-    // export { homeDisplay, signInDisplay, signUpDisplay, dashDisplay }
+    
 })();

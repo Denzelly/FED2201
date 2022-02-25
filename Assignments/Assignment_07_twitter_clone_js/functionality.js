@@ -1,3 +1,4 @@
+// import { signUserUp } from './dbModules.js'
 export default (function functionality() {
     $(document).ready(() => {
 
@@ -15,27 +16,9 @@ export default (function functionality() {
 
         var tweet = document.getElementById('tweetPost')
 
-        // verify password confirmation
-        if (newPassword.value === confirmPassword.value) {
-            console.log('passwords match')
-        } else {
-            alert('passwords do NOT match!')
-            console.log('passwords do not match')
-        }
-
         // users I plan to store
         var listOfUsers = []
-
-        // // retrieve database data
-        // $.get(`${firebaseUrl}/users${jsonExt}`)
-        //     .then((data) => {
-        //         console.dir(data)
-        //         for (user in data) {
-        //             listOfUsers.push(user)
-        //             console.log(`Successful!! ${data[user].username} loaded!`)
-        //         }
-        //     })
-
+        
         // post user sign up to DB
         function signUserUp() {
             $.post(`${firebaseUrl}/users${jsonExt}`, JSON.stringify({
@@ -47,18 +30,62 @@ export default (function functionality() {
                 }))
                 .then(console.log('You have just successfully signed up for Twitty Twit!'))
         }
+        // verify password confirmation
+        function passwordConfirmation() {
+            if (newPassword.value === confirmPassword.value) {
+                console.log('passwords match');
+            } else {
+                alert('passwords do NOT match!');
+                console.log('passwords do not match');
+                return e;
+                e.preventDefault();
+            }
+        }
+
+        // verify email or phone number
+        function emailOrPhone() {
+            var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var phoneFormat1 = /^\d{9}$/;
+            var phoneFormat2 = /^\d{10}$/;
+                if (newEmailPhone.value.match(mailFormat)) {
+                } 
+                else if (newEmailPhone.value.match(phoneFormat1)){
+                } 
+                else if (newEmailPhone.value.match(phoneFormat2)){
+                } 
+                else {
+                alert('Invalid Email or Phone-number!!');
+                console.log('Invalid Email or Phone-number!!');
+                return e;
+                e.preventDefault();
+            }
+        }
+
+        // user already exists
+        function alreadyExists() {
+
+        }
+
+
         // sign user up
         $(`#signUpButton`).click((e) => {
-            // e.preventDefault()
+            emailOrPhone(e)
+            passwordConfirmation(e)
             signUserUp()
-            alert('button clicked')
+            // alreadyExists()
+            alert('You have just successfully signed up for Twitty Twit!')
         })
+        
+        // pull user info from db
+        function logUserIn() {
 
-        // Login Placeholder
-        $(`#twitPost`).click((e) => {
-            // e.preventDefault()
-            signUserUp()
-            alert('Cool, you just tweeted!')
+        }
+
+
+        // log user in
+        $(`#loginButton`).click((e) => {
+            logUserIn()
+            alert('You have just successfully signed up for Twitty Twit!')
         })
 
         // post users tweet to DB
@@ -71,7 +98,7 @@ export default (function functionality() {
             // post tweet
             $(`#twitPost`).click((e) => {
                 e.preventDefault()
-                signUserUp()
+                postTweet()
                 alert('Cool, you just tweeted!')
             })
         }

@@ -3,17 +3,17 @@
     margin-right: auto;}
     
     /* Header */
-    .header {
+    .signUpHeader {
         position: static;
-        width: 417px;
-        height: 47px;
+        width: 350px;
+        height: 50px;
         left: auto;
         top: auto;
     
         font-family: Roboto;
         font-style: normal;
         font-weight: 900;
-        font-size: 48px;
+        font-size: 40px;
         line-height: 112px;
         display: flex;
         align-items: center;
@@ -129,6 +129,7 @@
     }
     
     .gridcont {
+        background-color:#6BB591;
         display: grid;
         /* grid-template-columns: auto; */
         grid-template-columns: auto auto auto;
