@@ -26,5 +26,5 @@ function check2() {
 
 checkButton3.onclick = function() {check3()};
 function check3() {
-    daysBt.value = parseInt((startDate-endDate)/1000/60/60/24);
+    daysBt.value = Math.abs(parseInt((startDate-endDate)/1000/60/60/24));
 }
