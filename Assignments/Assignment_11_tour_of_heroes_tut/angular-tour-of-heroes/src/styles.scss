@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+.index {
+    background-color: lightgreen;
+}
+
+@mixin hoverOver {
+    color: green;
+  font-size: larger;
+  font-weight: bold;
+  border: 1px solid black;
+}

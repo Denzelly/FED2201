@@ -3,5 +3,5 @@ export interface Hero {
     name: string;
     weight: string;
     height: string;
-    sidekick: string
+    sidekick: string;
 }
