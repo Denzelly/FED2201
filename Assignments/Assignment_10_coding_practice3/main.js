@@ -29,23 +29,25 @@ document.getElementById('tilDate').addEventListener('change', function () {
     };
 
     function check2() {
-        daysLeft.value = parseInt((thatDate - newTilDate-100800000) / 1000 / 60 / 60 / 24);
+        console.log(thatDate-today)
+        console.log(thatDate-newTilDate)
+        daysLeft.value = parseInt(((thatDate-newTilDate-100000000)/1000/60/60/24));
     }
 });
 
 
 
-checkButton3.onclick = function () {getDates()};
+// checkButton3.onclick = function () {getDates()};
 
-function getDates() {
-    document.getElementById('startDate').addEventListener('change', function () {
-        let newStartDate = new Date(this.value)
-    });
-    document.getElementById('endDate').addEventListener('change', function () {
-        let newEndDate = new Date(this.value)
-    });
+// function getDates() {
+//     document.getElementById('startDate').addEventListener('change', function () {
+//         let newStartDate = new Date(this.value)
+//     });
+//     document.getElementById('endDate').addEventListener('change', function () {
+//         let newEndDate = new Date(this.value)
+//     });
 
-function check3() {
-    daysBt.value = Math.abs(parseInt((newStartDate - newEndDate) / 1000 / 60 / 60 / 24));
-}
-}
+// function check3() {
+//     daysBt.value = Math.abs(parseInt((newStartDate - newEndDate) / 1000 / 60 / 60 / 24));
+// }
+// }
