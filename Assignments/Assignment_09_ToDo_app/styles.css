@@ -2,20 +2,66 @@
     background-color: hsl(237, 14%, 15%);
     background-image: url('./images/bg-desktop-dark.jpg');
     background-repeat: no-repeat;
-}
-.attribution { 
-    font-size: 11px; text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-.todo {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
     font-size: 18px;
-    text-align: center;
 }
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 30px;
+    margin-top: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoHeader {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
 .listStatus {
     text-align: center;
 }
+
 .dragNDrop {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
+.newTodoItem {
+    display: flex;
+    background-color: hsl(235, 24%, 19%);
+    height: 75px;
+    border-radius: 3pt;
+    margin-top: 50px;
+}
+
+.check {
+    background-color: lightgreen;
+    width: 75px;
+}
+
+.newTodoInput {
+    flex-grow: 1;
+    background-color: hsl(235, 24%, 19%);
+    display: flex;
+    align-items: center;
+    
+    & form {
+        width: 100%;
+    }
+
+    & input {
+        width: 100%;
+    }
+}
+

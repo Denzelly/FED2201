@@ -7,36 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Denzel's Todo app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="body">
 
-    <div class="todo">
-        Todo
+    <!-- The TODO Content Container -->
+    <div class="container">
+
+        <!-- Title and Theme Section -->
+        <div class="header">
+            <div class="todoHeader">
+                TODO
+            </div>
+            <div class="theme">
+                <img src="./images/icon-moon.svg">
+            </div>
+        </div>
+
+        <!-- Create New Item  -->
+        <div class="newTodoItem">
+
+            <!-- Checkbox -->
+            <div class="check">
+                <div class="checkMark">
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div class="newTodoInput">
+                <form>
+                    <input type="text" name="newTodoInputBox" id="newTodoInputBox" class="newTodoInputBox" placeholder="Create a new Todo...">
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Add dynamic number -->
+        <!-- <div class="listStatus">
+            items left
+            All
+            Active
+            Completed
+            Clear Completed
+        </div> -->
+
     </div>
 
-    <!-- Add dynamic number -->
-
-    <div class="listStatus">
-        items left
-        All
-        Active
-        Completed
-        Clear Completed
-    </div>
-
-    <div class="dragNDrop">
+    <!-- <div class="dragNDrop">
         Drag and drop to reorder list
-    </div>
+    </div> -->
 
     <br>
     <br>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="http://phynp6.phy-astr.gsu.edu/~Denzelly/">Denzel R. Brown</a>.
-    </div>
+    </div> -->
 </body>
 
 </html>
