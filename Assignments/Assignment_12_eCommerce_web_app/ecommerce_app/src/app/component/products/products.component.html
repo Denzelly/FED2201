@@ -1,0 +1,48 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a>
+                <img style='margin: 20px 20px 35px 40px;' src="./../../../assets/j1.jpg">
+                <h6>Jordans</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img style='margin: 20px 20px 15px 40px;' src="./../../../assets/k1.jpg">
+                <h6>Kyries</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img style='margin: 40px 20px 35px 40px;' src="./../../../assets/l1.jpg">
+                <h6>Lebrons</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img style='margin: 20px 20px 20px 40px;' src="./../../../assets/n1.jpg">
+                <h6>Nikes</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img style='margin: 45px 20px 35px 40px;' src="./../../../assets/y1.jpg">
+                <h6>Yeezys</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of sneakerList">
+            <div class="card col-md-3">
+                <img src="" alt="">
+                <h5>{{ item.title }}</h5>
+                <p></p>
+                <p></p>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>

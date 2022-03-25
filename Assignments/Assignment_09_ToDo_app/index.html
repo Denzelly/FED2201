@@ -16,6 +16,11 @@
 
 <body class="body">
 
+    <!-- Background Image -->
+    <div class="background">
+        <img src="./images/bg-desktop-dark.jpg">
+    </div>
+
     <!-- The TODO Content Container -->
     <div class="container">
 
@@ -34,27 +39,104 @@
 
             <!-- Checkbox -->
             <div class="check">
-                <div class="checkMark">
+                <div class="checkMark" id="checkMark">
                 </div>
             </div>
 
             <!-- Input -->
             <div class="newTodoInput">
-                <form>
-                    <input type="text" name="newTodoInputBox" id="newTodoInputBox" class="newTodoInputBox" placeholder="Create a new Todo...">
+                <form onsubmit="addNewTodo(event)">
+                    <input type="text" name="newTodoInputBox" id="newTodoInputBox" class="newTodoInputBox"
+                        placeholder="Create a new Todo..." />
                 </form>
             </div>
 
         </div>
 
-        <!-- Add dynamic number -->
-        <!-- <div class="listStatus">
-            items left
-            All
-            Active
-            Completed
-            Clear Completed
-        </div> -->
+        <!-- Creating List Items Inside Container -->
+        <div class="listItemBig">
+
+            <!-- Each Individual Item & Status-->
+            <div class="listItems">
+                
+                <!-- Item 1 -->
+                <div class="listItem">
+                    
+                    <!-- Checkbox -->
+                    <div class="check">
+                        <div class="checkMark">
+                            <img src="./images/icon-check.svg">
+                        </div>
+                    </div>
+                    
+                    <!-- Listed Item -->
+                    <div class="itemText">
+                        Wash dishes
+                    </div>
+                    
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="listItem">
+                    
+                    <!-- Checkbox -->
+                    <div class="check">
+                        <div class="checkMark">
+                            <img src="./images/icon-check.svg">
+                        </div>
+                    </div>
+                    
+                    <!-- Listed Item -->
+                    <div class="itemText">
+                        Wash dishes
+                    </div>
+                    
+                </div>
+
+                <!-- Item 3 -->
+                <div class="listItem">
+                    
+                    <!-- Checkbox -->
+                    <div class="check">
+                        <div class="checkMark">
+                            <img src="./images/icon-check.svg">
+                        </div>
+                    </div>
+
+                    <!-- Listed Item -->
+                    <div class="itemText">
+                        Wash dishes
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="listItemsInfo">
+                <!-- Add dynamic number -->
+                <div class="itemsLeft">
+                    5 items left
+                </div>
+
+                <!-- List Status -->
+                <div class="status">
+                    <span class="active">All</span>
+                    <span>Active</span>
+                    <span>Completed</span>
+
+                </div>
+
+                <!-- Clear List -->
+                <div class="clearList">
+                    <span>
+                        Clear Completed
+                    </span>
+                </div>
+                
+
+            </div>
+
+        </div>
+
 
     </div>
 
@@ -69,6 +151,7 @@
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="http://phynp6.phy-astr.gsu.edu/~Denzelly/">Denzel R. Brown</a>.
     </div> -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
